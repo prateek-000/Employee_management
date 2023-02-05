@@ -1,0 +1,20 @@
+package com.example.demo.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+
+@Controller
+public class Emp_controller {
+
+	@GetMapping("/")
+	public String Name() {
+		
+		return "index" ;
+	}
+	
+	@GetMapping("/addemp")
+	public String addEmpForm() {
+		
+		return "add_emp" ;
+	}
+}
